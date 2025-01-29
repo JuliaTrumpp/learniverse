@@ -1,0 +1,38 @@
+.lightModeTextP {
+  color: var(--text-secondary-lm);
+}
+
+.darkModeTextP {
+  color: var(--text-secondary-dm);
+}
+
+.container iframe {
+  width: 35.3125rem;
+  height: 22.1875rem;
+  border: none;
+  border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+  .container iframe {
+    width: 35.3125rem;
+    height: 22.1875rem;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container iframe {
+    width: 28.75rem;
+    height: 18.75rem;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container iframe {
+    width: 19.375rem;
+    height: 12.5rem;
+    border-radius: 12px;
+  }
+}

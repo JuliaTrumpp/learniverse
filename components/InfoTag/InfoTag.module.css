@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  width: max-content;
+}
+
+.containerDark {
+  background: var(--bg-dm);
+  border: 1.5px solid var(--module-bg-dm);
+  box-shadow: 0px 0px 1417.5px 0px #2f2b65, 0px 0px 810px 0px #2f2b65,
+    0px 0px 472.5px 0px #2f2b65, 0px 0px 236.25px 0px #2f2b65,
+    0px 0px 67.5px 0px #2f2b65, 0px 0px 33.75px 0px #2f2b65;
+}
+
+.containerLight {
+  background: var(--module-bg-lm);
+  border: 1.5px solid var(--line-10-lm);
+  box-shadow: 0px 0px 1417.5px 0px #bfbafe, 0px 0px 810px 0px #bfbafe,
+    0px 0px 472.5px 0px #bfbafe, 0px 0px 236.25px 0px #bfbafe,
+    0px 0px 67.5px 0px #bfbafe, 0px 0px 33.75px 0px #bfbafe;
+}
+
+.taglineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 500px;
+  padding: 14px 30px;
+  background-color: var(--header-line-5);
+}
+
+.p {
+  margin: 0;
+}
+
+.pDark {
+  color: var(--white);
+}
+
+.pLight {
+  color: var(--text-primary-lm);
+}

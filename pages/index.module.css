@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  z-index: 2;
+}
+
+.container
+  > :not(.backgroundImage, .backgroundImageDark, .backgroundImageLight) {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.backgroundImage {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+}
+
+.backgroundImageDark {
+  background-image: url("../public/images/stage-background_darkmode.webp");
+}
+
+.backgroundImageLight {
+  background-image: url("../public/images/stage-background_lightmode.webp");
+}
+
+.containerLight {
+  background-color: var(--bg-lm);
+}
+
+.containerDark {
+  background-color: var(--black);
+}
+
+@media (max-width: 430px) {
+  .backgroundImageDark {
+    background-image: url("../public/images/stage-background_darkmode_mobile.webp");
+  }
+
+  .backgroundImageLight {
+    background-image: url("../public/images/stage-background_lightmode_mobile.webp");
+  }
+}

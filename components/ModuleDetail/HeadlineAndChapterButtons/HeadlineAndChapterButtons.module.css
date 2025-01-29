@@ -1,0 +1,138 @@
+.container {
+  gap: 2.5rem;
+  margin-bottom: 6.25rem;
+}
+
+.headlineAndButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+
+.backNextButtonContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.generalButton {
+  display: flex;
+  gap: 0.625rem;
+  padding: 1.1875rem 2.5rem;
+  border: none;
+  border-radius: 500px;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leftArrow path,
+.rightArrow path {
+  transition: fill 0.3s ease;
+}
+
+.headline {
+  text-align: center;
+}
+
+.lightModeLeftButton {
+  background-color: var(--module-bg-lm);
+  color: var(--text-secondary-lm);
+}
+
+.darkModeLeftButton {
+  background-color: var(--module-bg-dm);
+  color: var(--text-secondary-dm);
+}
+
+.lightModeLeftArrow path {
+  fill: var(--text-secondary-lm);
+}
+
+.darkModeLeftArrow path {
+  fill: var(--text-secondary-dm);
+}
+
+.lightModeRightButton {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.darkModeRightButton {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.darkModeRightArrow path {
+  fill: var(--black);
+}
+
+.generalButton:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.generalButton:hover .leftArrow path,
+.generalButton:hover .rightArrow path {
+  fill: var(--white);
+}
+
+@media (max-width: 1200px) {
+  .container {
+    gap: 2.5rem;
+    margin-bottom: 6.25rem;
+  }
+
+  .headlineAndButtonContainer {
+    gap: 3.125rem;
+  }
+
+  .generalButton {
+    padding: 1.1875rem 2.5rem;
+    gap: 0.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 2.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .headlineAndButtonContainer {
+    gap: 2.5rem;
+  }
+
+  .generalButton {
+    padding: 0.9375rem 1.875rem;
+    gap: 0.625rem;
+  }
+
+  .leftArrow path,
+  .rightArrow path {
+    transform: scale(0.7);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .headlineAndButtonContainer {
+    gap: 1.88rem;
+  }
+
+  .generalButton {
+    gap: 0.625rem;
+    padding: 0.9375rem 1.875rem;
+  }
+
+  .leftArrow path,
+  .rightArrow path {
+    transform: scale(0.6);
+    transform-origin: center;
+  }
+}

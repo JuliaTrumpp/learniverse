@@ -1,0 +1,181 @@
+.lightModeBackground {
+  background-color: var(--bg-lm);
+}
+
+.darkModeBackground {
+  background-color: var(--black);
+}
+
+.lightModeText {
+  color: var(--text-primary-lm);
+}
+
+.darkModeText {
+  color: var(--text-primary-dm);
+}
+
+.pageSections {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 12.5rem;
+}
+
+.chatbotButton {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 1.25rem;
+  gap: 0.625rem;
+  border-radius: 50%;
+  border: 1.5px solid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.chatContainer {
+  position: fixed;
+  bottom: 3.125rem;
+  right: 3.125rem;
+  width: 37.5rem;
+  height: 43.75rem;
+  max-width: 37.5rem;
+  max-width: 55rem;
+  border-radius: 0.9375rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.sliderContainer {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: inline-flex;
+}
+
+.sliderContainer div{
+  margin-left: 0px; 
+}
+
+.headlineAndSlider {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  width: 95vw;
+}
+
+.chatContainerHidden {
+  display: none;
+}
+
+.lightModeChatbotButton {
+  border: 1.5px solid var(--line-10-lm);
+  background: var(--module-bg-lm);
+  box-shadow: 0px 0px 1417.5px 0px #bfbafe, 0px 0px 810px 0px #bfbafe,
+    0px 0px 472.5px 0px #bfbafe, 0px 0px 236.25px 0px #bfbafe,
+    0px 0px 67.5px 0px #bfbafe, 0px 0px 33.75px 0px #bfbafe;
+}
+
+.darkModeChatbotButton {
+  border: 1.5px solid var(--module-bg-dm);
+  background: var(--bg-dm);
+  box-shadow: 0px 0px 1417.5px 0px #2f2b65, 0px 0px 810px 0px #2f2b65,
+    0px 0px 472.5px 0px #2f2b65, 0px 0px 236.25px 0px #2f2b65,
+    0px 0px 67.5px 0px #2f2b65, 0px 0px 33.75px 0px #2f2b65;
+}
+
+.chatbotButton:hover {
+  opacity: 0.5;
+}
+
+@media (max-width: 1200px) {
+  .pageSections {
+    gap: 5rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+  }
+
+  .chatbotButton {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .chatContainer {
+    bottom: 30px;
+    right: 30px;
+    width: 37.5rem;
+    height: 43.75rem;
+    max-width: 37.5rem;
+    max-width: 55rem;
+    border-radius: 0.9375rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .headlineAndSlider {
+    gap: 3.125rem;
+    width: 95vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .pageSections {
+    gap: 2.5rem;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
+  }
+
+  .chatbotButton {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .chatbotButton {
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+
+  .headlineAndSlider {
+    gap: 1.875rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .pageSections {
+    gap: 2.5rem;
+    padding-bottom: 3.75rem;
+    padding-top: 10rem;
+  }
+
+  .chatbotButton {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .chatbotButton{
+    transform: scale(0.75);
+    transform-origin: center;
+  }
+
+  .chatContainer {
+    position: static;
+    width: 100%;
+    height: auto;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 auto;
+    bottom: 0rem;
+    right: 0rem;
+  }
+
+  .headlineAndSlider {
+    gap: 1.25em;
+  }
+}

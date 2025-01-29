@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 100px;
+  max-width: 100%;
+  gap: 5rem;
+}
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+}
+
+.formContainer {
+  flex: 1;
+}
+
+.contactPersonImage {
+  width: 100%;
+}
+
+.imageLabels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.imageLabels p {
+  margin-top: 0.5rem;
+}
+
+.lightP {
+  color: var(--text-secondary-lm);
+}
+
+.darkP {
+  color: var(--text-secondary-dm);
+}
+
+.lightText {
+  color: var(--text-primary-lm);
+}
+
+.darkText {
+  color: var(--text-primary-dm);
+}
+
+@media (max-width: 935px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+}

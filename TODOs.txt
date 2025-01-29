@@ -1,0 +1,24 @@
+ModuleDetail.txt:
+
+- Border bei den Videos wegbekommen
+- ChatBot Icon richtig exportieren
+- Beim ModuleCardSliderContainer müssen noch Suggested Modules benutzt werden
+- Interfaces in eine Datei?
+- Youtubevideo Slider Videoname drunter? In Figma nur bei Lightmode
+
+
+Generell:
+
+- Unnötige Kommentare weg
+- darkModeText lightModeText Klassen nicht alle doppelt in den module.css Klassen sondern alle aus Globals
+    (also nicht nur die Farbvariablen sondern Klasse)
+
+
+
+
+
+
+jule:
+
+responsive modulepage
+jest test api mock  

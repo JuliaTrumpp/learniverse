@@ -1,0 +1,7 @@
+.slider {
+  display: inline-flex;
+  gap: 0.9375em;
+  margin-left: 5vw;
+  overflow-x: scroll;
+  white-space: nowrap;
+}

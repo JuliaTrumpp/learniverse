@@ -1,0 +1,150 @@
+.container {
+  position: relative;
+  background-color: transparent;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  right: 5vw;
+  height: 1px;
+  background-color: var(--line-10-lm);
+}
+
+.dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  right: 5vw;
+  height: 1px;
+  background-color: var(--line-20-dm);
+}
+
+.socialsIcons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  display: flex;
+  flex: 2;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.socialsIcons a {
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialsImg {
+  width: 2em;
+}
+
+.socialsImg:hover {
+  opacity: 0.5;
+}
+
+.textLinks {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.textLinks a:visited {
+  color: inherit;
+}
+
+.logo {
+  flex: 2;
+  justify-content: start;
+  align-items: center;
+  display: flex;
+}
+
+.footerContent3 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.light {
+  background-color: var(--bg-lm);
+}
+
+.dark {
+  background-color: var(--black);
+}
+
+.textLight {
+  color: var(--text-primary-lm) !important;
+}
+
+.textDark {
+  color: var(--text-primary-dm) !important;
+}
+
+.textLight:hover,
+.textLight:visited {
+  color: var(--text-primary-lm) !important;
+}
+
+.textDark:hover,
+.textDark:visited {
+  color: var(--text-primary-dm) !important;
+}
+
+@media (max-width: 835px) {
+  .container {
+    padding-bottom: 30px;
+    padding: 20px;
+  }
+
+  .footerContent3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logo {
+    transform: scale(0.8);
+    transform-origin: center center;
+  }
+
+  .socialsImg {
+    transform: scale(0.8);
+    transform-origin: center center;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding-bottom: 30px;
+    padding: 20px;
+  }
+  .footerContent3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .logo {
+    transform: scale(0.8);
+    transform-origin: center center;
+  }
+
+  .socialsImg {
+    transform: scale(0.8);
+    transform-origin: center center;
+  }
+}

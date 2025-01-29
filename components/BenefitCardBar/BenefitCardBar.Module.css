@@ -1,0 +1,25 @@
+.benefitCardsContainer {
+  display: flex;
+  width: 1540px;
+  text-align: left;
+  padding-top: 10vh;
+}
+
+@media (max-width: 1600px) {
+  .benefitCardsContainer {
+    padding-top: 5vh;
+    width: auto;
+  }
+}
+
+@media (max-width: 1175px) {
+  .benefitCardsContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .benefitCardsContainer {
+    flex-direction: column;
+  }
+}

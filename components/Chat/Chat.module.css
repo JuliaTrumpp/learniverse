@@ -1,0 +1,249 @@
+.container { 
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  max-width: 37.5rem;
+  flex-shrink: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+}
+
+/* push */
+
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid var(--module-bg-lm);
+  background-color: var(--bg-lm);
+}
+
+.chatButtons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.deleteButton,
+.closeButton,
+.sendIcon {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background: var(--design);
+}
+
+.closeButton {
+  background: var(--module-bg-lm);
+}
+
+.buttonIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.sendIcon {
+  background: var(--primary);
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.875rem;
+}
+
+.sendButton {
+  background: var(--primary);
+  display: flex;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.light {
+  border: 2px solid var(--module-bg-lm);
+  background: var(--bg-lm);
+  color: var(--text-primary-lm);
+}
+
+.dark {
+  border: 2px solid var(--module-bg-dm);
+  background: var(--bg-dm);
+  color: var(--text-primary-dm);
+}
+
+.messagesContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: x-small;
+}
+
+.inputContainer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.inputField {
+  flex-grow: 1;
+  padding: 12px 20px;
+  border: 1.5px solid var(--module-bg-lm);
+  border-radius: 500px;
+  background: var(--light-mode-bg);
+  color: inherit;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: var(--module-bg-lm);
+  border-radius: 15px 15px 0 15px;
+  padding: 10px;
+  max-width: 75%;
+}
+
+.botMessage {
+  align-self: flex-start;
+  background-color: transparent;
+  padding: 10px;
+  max-width: 75%;
+}
+
+.userMessage,
+.botMessage {
+  margin-bottom: 2vh;
+}
+
+.dark .inputContainer {
+  border-top-color: var(--module-bg-dm);
+}
+
+.dark .inputField {
+  border-color: var(--module-bg-dm);
+  background: var(--bg-dm);
+}
+
+.dark .userMessage {
+  background-color: var(--module-bg-dm);
+  color: var(--text-primary-dm);
+}
+
+.dark .botMessage {
+  color: var(--text-primary-dm);
+}
+
+.dark .closeButton {
+  background: var(--module-bg-dm);
+}
+
+.dark .chatHeader {
+  background-color: var(--bg-dm);
+  border-bottom-color: var(--module-bg-dm);
+}
+
+.chatbotIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .6rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.light .chatbotIconContainer {
+  border: 1.5px solid var(--light-mode-line-10, rgba(0, 0, 0, 0.10));
+  background: var(--module-bg-lm);
+  box-shadow: 0px 0px 33.75px 0px #BFBAFE;
+}
+
+.dark .chatbotIconContainer {
+  border: 1.5px solid var(--module-bg-dm);
+  background: var(--black);
+  box-shadow: 0px 0px 33.75px 0px #2F2B65;
+}
+
+.chatbotIcon{
+  transform: scale(0.7);
+}
+
+.iconAndMessageContainer {
+  padding: 0;
+  display: flex;
+  gap: 0.9375rem;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .userMessage {
+    border-radius: 10px 10px 0 10px;
+    padding: 5px;
+    max-width: 75%;
+  }
+
+  .messagesContainer {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    border-radius: 0;
+  }
+
+  .chatbotIcon {
+    transform: scale(0.65);
+  }
+
+  .iconAndMessageContainer {
+    gap: 0.75rem;
+  }
+
+  .botIcon {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .userMessage {
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+  }
+  
+  .botMessage {
+    max-width: 85%;
+  }
+}

@@ -1,0 +1,144 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: nowrap;
+}
+
+.inputContainer .input {
+  flex-grow: 1;
+  margin-top: 0px;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 0.09375rem solid;
+  background-color: transparent;
+  transition: border-color 0.3s ease;
+  width: 30rem;
+  min-width: 0;
+}
+
+.inputContainer .input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: max-content;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0.8vh 1vw;
+  position: absolute;
+  z-index: 1;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltipText::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error {
+  margin-top: 1.5vh;
+  color: var(--design);
+}
+
+.inputContainer .lightModeInput {
+  color: var(--text-primary-lm);
+  border-color: var(--line-10-lm);
+}
+
+.inputContainer .darkModeInput {
+  color: var(--text-primary-dm);
+  border-color: var(--line-20-dm);
+}
+
+.lightModeTooltipText {
+  background-color: var(--module-bg-dm);
+  color: var(--text-primary-dm);
+}
+
+.lightModeTooltipText::after {
+  border-color: var(--module-bg-dm) transparent transparent transparent;
+}
+
+.darkModeTooltipText {
+  background-color: var(--module-bg-lm);
+  color: var(--text-primary-lm);
+}
+
+.darkModeTooltipText::after {
+  border-color: var(--module-bg-lm) transparent transparent transparent;
+}
+
+@media (max-width: 768px) {
+  .inputContainer {
+    width: 80%;
+  }
+
+  .inputContainer .input {
+    width: calc(100% - 40px);
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .tooltip .tooltipText {
+    left: 80%;
+    transform: translateX(-84%);
+    padding: 1.2vh 4vw;
+  }
+
+  .tooltip .tooltipText::after {
+    left: 80%;
+  }
+
+  .tooltip svg path {
+    transform: scale(0.9);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .inputContainer {
+    width: 90%;
+  }
+
+  .inputContainer .input {
+    padding: 0.75rem;
+    border-radius: 12px;
+  }
+
+  .tooltip .tooltipText {
+    left: 95%;
+    transform: translateX(-95%);
+  }
+
+  .tooltip .tooltipText::after {
+    left: 88%;
+  }
+
+  .tooltip svg path {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+}

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.darkMode {
+  color: var(--text-primary-dm);
+}
+
+.lightMode {
+  color: var(--text-primary-lm);
+}
+
+.backgroundDarkmode {
+  background-color: var(--bg-dm);
+}
+
+.backgroundLightmode {
+  background-color: var(--bg-lm);
+}
+
+.homeButton {
+  margin-top: 1rem;
+}

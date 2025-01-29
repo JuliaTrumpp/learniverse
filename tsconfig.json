@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "types": ["jest", "@testing-library/jest-dom"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    
+
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "svgr.d.ts",
+    ".next/types/**/*.ts",
+    "jest.setup.ts",
+    "jest.config.ts",
+    "playwright/e2e_playwright/indexTest.spec.ts",
+
+    "src/**/*",
+    "unitTs/**/*"
+, "unitTs/Jest/unitTests_jest"  ],
+  "exclude": ["node_modules"],
+}
