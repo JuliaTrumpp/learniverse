@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <LearniverseLogo alt="Learniverse Logo" data-testid="Learniverse Logo"/>
 <br />
 <div align="center">
@@ -196,3 +197,7 @@ Julia Trumpp - Julia.Trumpp@student.hs-rm.de
 David Rossel - David.rossel@student.hs-rm.de
 
 <br><br>
+=======
+# lerniverseWE
+Frontend project with React and Next.js
+>>>>>>> 147f782302f626035e0bb290f4a51f6fe63d49c9
