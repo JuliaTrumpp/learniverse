@@ -21,6 +21,9 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
+      <ul>
+        <li><a href="#project-demo-video">Project Demo Video</a></li>
+      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -58,6 +61,11 @@ The footer of the page contains links to the imprint.
 - [React](https://reactjs.org/) - JavaScript library for the user interface
 - [YouTube API](https://developers.google.com/youtube/v3) - API for the integration of YouTube videos
 - [Groq](https://console.groq.com/) - API for the integration of Groq artificial intelligence
+
+### Project Demo Video
+
+To take a look at the project, you can follow this link to a demo video.
+https://my.hidrive.com/share/iq1xjll2td
 
 ## Getting Started
 
@@ -196,8 +204,4 @@ Julia Trumpp - Julia.Trumpp@student.hs-rm.de
 <br/>
 David Rossel - David.rossel@student.hs-rm.de
 
-<br><br>
-=======
-# lerniverseWE
-Frontend project with React and Next.js
->>>>>>> 147f782302f626035e0bb290f4a51f6fe63d49c9
+
